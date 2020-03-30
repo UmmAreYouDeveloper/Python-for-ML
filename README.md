@@ -7,4 +7,4 @@
 ```
 
 ### How to know token
-  ![How to know token](j.png)
+  <img src = "C:\Users\유성민\Desktop\git\ml_python\j.png" width="40%" height="30%" title="token" alt="How to get token"></img>
