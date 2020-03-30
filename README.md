@@ -7,4 +7,4 @@
 ```
 
 ### How to know token
- ![](/j.png)
+ ![](\Users\유성민\Desktop\git\ml_python)
