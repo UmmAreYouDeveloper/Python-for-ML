@@ -7,4 +7,4 @@
 ```
 
 ### How to know token
-  <img src = "ml_python\j.png" width="40%" height="30%" title="token" alt="How to get token"></img>
+ ![](/j.png)
