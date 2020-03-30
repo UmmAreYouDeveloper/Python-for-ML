@@ -7,4 +7,4 @@
 ```
 
 ### How to know token
- ![](\Users\유성민\Desktop\git\ml_python)
+ ![](/Users/유성민/Desktop/git/ml_python/j.png)
