@@ -3,7 +3,7 @@
 + 총 주어진 샘플 중 80%를 training으로 구성하여 훈련
 + 10%를 validation 데이터로 구성하여 하이퍼 파라미터를 최적화 시킨다.
 + 최종적으로 남은 10%를 test 데이터로 구성한다.
-'''python
+''' python
   rom sklearn.model_selection import train_test_split
   train_test_split(arrays, test_size, train_size, random_state, shuffle, stratify)
 '''
@@ -29,7 +29,7 @@ X_train, X_test, Y_train, Y_test : arrays에 데이터와 레이블을 둘 다 �
 X_train, X_test : arrays에 레이블 없이 데이터만 넣었을 경우의 반환
 
 (3) Example
-'''python
+''' python
 import numpy as np
 from sklearn.model_selection import train_test_split
 
