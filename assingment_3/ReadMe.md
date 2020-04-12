@@ -3,10 +3,10 @@
 + 총 주어진 샘플 중 80%를 training으로 구성하여 훈련
 + 10%를 validation 데이터로 구성하여 하이퍼 파라미터를 최적화 시킨다.
 + 최종적으로 남은 10%를 test 데이터로 구성한다.
-''' python
-  rom sklearn.model_selection import train_test_split
+"""python
+  from sklearn.model_selection import train_test_split
   train_test_split(arrays, test_size, train_size, random_state, shuffle, stratify)
-'''
+"""
 (1) Parameter
 
 arrays : 분할시킬 데이터를 입력 (Python list, Numpy array, Pandas dataframe 등..)
