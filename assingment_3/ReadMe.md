@@ -1,7 +1,8 @@
 # Assignment_3
 
-## link
-  [link](https://www.kdata.or.kr/info/info_04_view.html?field=&keyword=&type=techreport&page=25&dbnum=181570&mode=detail&type=techreport)
+## 유용했던 link 모음
+  [](https://www.kdata.or.kr/info/info_04_view.htmlfield=&keyword=&type=techreport&page=25&dbnum=181570&mode=detail&type=techreport)
+
 ## Data split
 + 총 주어진 샘플 중 80%를 training으로 구성하여 훈련
 + 10%를 validation 데이터로 구성하여 하이퍼 파라미터를 최적화 시킨다.
@@ -44,92 +45,17 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.33, random
 ※ 사용방법이 쉽고 셔플까지 적용되므로 간단하고 합리적인 함수이지만 Validation Set을 따로 만들어주지는 않는다. 
    Validation Set이 필요하다면 분할한 데이터 중 한 덩어리에 해당 함수를 한 번 더 사용하면 된다.
    
-## KNN algorithm
-```python
-  from sklearn.neighbors import KNeighborsClassifier
-  knn = KNeighborsClassifier(n_neighbors=5,n_jobs=-1,p=2)
-  knn.fit(x_train,y_train)
-  y_pred = knn.predict(x_valid)
-  y_pred
-```
-+ parameters
-```
-n_neighbors : int, optional (default = 5)
-    Number of neighbors to use by default for :meth:`kneighbors` queries.
-weights : str or callable, optional (default = 'uniform')
-    weight function used in prediction.  Possible values:
+## Using Algorithm package in sklearn
 
-    - 'uniform' : uniform weights.  All points in each neighborhood
-      are weighted equally.
-    - 'distance' : weight points by the inverse of their distance.
-      in this case, closer neighbors of a query point will have a
-      greater influence than neighbors which are further away.
-    - [callable] : a user-defined function which accepts an
-      array of distances, and returns an array of the same shape
-      containing the weights.
++ [sklearn tutorial](https://scikit-learn.org/stable/)
++ Google Search Keywords
+  - sklearn <algorithm name>
 
-algorithm : {'auto', 'ball_tree', 'kd_tree', 'brute'}, optional
-    Algorithm used to compute the nearest neighbors:
-
-    - 'ball_tree' will use :class:`BallTree`
-    - 'kd_tree' will use :class:`KDTree`
-    - 'brute' will use a brute-force search.
-    - 'auto' will attempt to decide the most appropriate algorithm
-      based on the values passed to :meth:`fit` method.
-
-    Note: fitting on sparse input will override the setting of
-    this parameter, using brute force.
-
-leaf_size : int, optional (default = 30)
-    Leaf size passed to BallTree or KDTree.  This can affect the
-    speed of the construction and query, as well as the memory
-    required to store the tree.  The optimal value depends on the
-    nature of the problem.
-
-p : integer, optional (default = 2)
-    Power parameter for the Minkowski metric. When p = 1, this is
-    equivalent to using manhattan_distance (l1), and euclidean_distance
-    (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used.
-
-metric : string or callable, default 'minkowski'
-    the distance metric to use for the tree.  The default metric is
-    minkowski, and with p=2 is equivalent to the standard Euclidean
-    metric. See the documentation of the DistanceMetric class for a
-    list of available metrics.
-    If metric is "precomputed", X is assumed to be a distance matrix and
-    must be square during fit. X may be a :term:`Glossary <sparse graph>`,
-    in which case only "nonzero" elements may be considered neighbors.
-
-metric_params : dict, optional (default = None)
-    Additional keyword arguments for the metric function.
-
-n_jobs : int or None, optional (default=None)
-    The number of parallel jobs to run for neighbors search.
-    ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.
-    ``-1`` means using all processors. See :term:`Glossary <n_jobs>`
-    for more details.
-    Doesn't affect :meth:`fit` method.
-
-Attributes
-----------
-classes_ : array of shape (n_classes,)
-    Class labels known to the classifier
-
-effective_metric_ : string or callble
-    The distance metric used. It will be same as the `metric` parameter
-    or a synonym of it, e.g. 'euclidean' if the `metric` parameter set to
-    'minkowski' and `p` parameter set to 2.
-
-effective_metric_params_ : dict
-    Additional keyword arguments for the metric function. For most metrics
-    will be same with `metric_params` parameter, but may also contain the
-    `p` parameter value if the `effective_metric_` attribute is set to
-    'minkowski'.
-
-outputs_2d_ : bool
-    False when `y`'s shape is (n_samples, ) or (n_samples, 1) during fit
-    otherwise True.
-```
-
-## Decision Tree
-
+## Using cross-validation(k-fold, loocv) package in sklearn
++ Google Search Keywords
+  - sklearn <cv name>
+  
+## GridSearchCV and make_pipeline
++ Google Search Keywords
+  - sklearn GridSearchCV
+  - sklearn pipeline
