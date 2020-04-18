@@ -1,7 +1,7 @@
 # Assignment_3
 
 ## 유용했던 link 모음
-  [](https://www.kdata.or.kr/info/info_04_view.htmlfield=&keyword=&type=techreport&page=25&dbnum=181570&mode=detail&type=techreport)
+  [cv](https://www.kdata.or.kr/info/info_04_view.htmlfield=&keyword=&type=techreport&page=25&dbnum=181570&mode=detail&type=techreport)
 
 ## Data split
 + 총 주어진 샘플 중 80%를 training으로 구성하여 훈련
