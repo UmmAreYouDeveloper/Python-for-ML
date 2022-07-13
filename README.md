@@ -1,4 +1,5 @@
-# Python-for-ML
+# Machine Learning and Data Mining
+
 ### How to install jupyter notebook
 ```shell
   $ pip install "ipython[notebook]"
